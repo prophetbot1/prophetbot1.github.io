@@ -3,13 +3,14 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1);
-    border-radius: 2px;
+    border-radius: 15px;
     overflow: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     line-height: normal;
+    width: 300px;
 }
 
 .aplayer * {
@@ -727,5 +728,9 @@
         transform: rotate(1turn)
     }
 }
-
+@media(max-width: 800px) {
+    .aplayer {
+        width: 90px;
+    }
+}
 /*# sourceMappingURL=APlayer.min.css.map*/

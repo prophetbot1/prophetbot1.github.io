@@ -1,10 +1,10 @@
-let rightBox = document.querySelector(".right")
-let arrow = document.querySelector(".arrow")
-let main = document.querySelector(".main")
-let leftBox = document.querySelector(".left")
+let rightBox = document.querySelector(".right");
+let arrow = document.querySelector(".arrow");
+let main = document.querySelector(".main");
+let leftBox = document.querySelector(".left");
 window.onload = function(){ 
     var audio = document.getElementById('music');
-        audio.pause();
+    audio.pause();
 }
     function spread(){
         if (rightBox.classList.contains('open')) {  
@@ -34,7 +34,17 @@ window.onload = function(){
     function waao(){
         let audio = document.getElementById('music');
         let diangun = document.querySelector(".waao")
-        audio.play();
-        diangun.style.display= 'block';
-        setTimeout(() => { diangun.style.display= 'none';}, 1500);
+        let logo = document.querySelector(".logo")
+        if(logo.classList.contains('done')){
+            audio.pause();
+        }
+        else{
+            document.documentElement.requestFullscreen();
+            audio.play();
+            diangun.style.display= 'block';
+            setTimeout(() => { diangun.style.display= 'none';}, 1500);
+            logo.classList.add('done'); 
+            document.exitFullscreen();
+        }
+        
     }
