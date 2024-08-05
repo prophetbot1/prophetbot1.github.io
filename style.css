@@ -34,7 +34,7 @@ body{
     height: 500px;
     margin-top: 40px;
     transition: 0.5s ease;
-    zoom: 0.9;
+    zoom: 0.8;
     z-index:1;
 }
 /* left box */
@@ -261,6 +261,7 @@ a >span{
     backdrop-filter:blur(10px);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     user-select: none;
+    zoom: 0.9;
 }
 
 #nav >h2{

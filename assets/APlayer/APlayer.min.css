@@ -11,6 +11,7 @@
     user-select: none;
     line-height: normal;
     width: 300px;
+    zoom: 0.9;
 }
 
 .aplayer * {
